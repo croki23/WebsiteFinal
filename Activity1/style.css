@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(rgb(160, 160, 160), rgb(160, 160, 160));
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 200px;  
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.ClassL {
+    width: 50%;
+}
+.ClassR {
+    width: 50%;
+}
+button{
+    background-color: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    color: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    padding: 1rem;
+    margin-top: 3px;
+    border-radius: 2rem;
+    box-shadow: 20px;
+}
