@@ -1,3 +1,13 @@
+const rightDiv = (image) => {
+    let mydiv = document.createElement("mydiv");
+    mydiv.className = "rightClass";
+    mydiv.innerHTML = `<img src="./${image}" class="imgc">`;
+    return mydiv;
+};
+
+export { rightDiv };
+
+
 const leftDiv = (title, para, button) => {
     let mydiv = document.createElement("mydiv")
     mydiv.className = "leftClass"
@@ -5,8 +15,7 @@ const leftDiv = (title, para, button) => {
                         <p class ="para1">${para}</p>
                         <button class="sec1btn">${button}</button>
                         `
-    return mydiv
+    return mydiv;
 }
 
-export {leftDiv}
-
+export { leftDiv };

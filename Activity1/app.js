@@ -9,7 +9,7 @@ const data = {
     Btn3: "Jump",
     Btn4: "Fetch",
    
-    myImage : "dog1.png"
+    myImage : "dog3.png"
 }
 
 const { title1,para1,Btn1, Btn2, Btn3, Btn4, myImage } = data

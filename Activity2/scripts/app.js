@@ -1,33 +1,36 @@
-import { imgfun } from "./img.js"
-import { infofunc } from "./info.js"
-import { infofunc2 } from "./info.js"
-import { cardfunc } from "./card.js"
+import { leftDiv } from "./info.js";
+import { rightDiv } from "./image.js";
+import { sectwoDiv } from "./card.js";
 
-let sec1 = document.getElementById('section1')
-let sec2 = document.getElementById('section2')
+let secOne = document.getElementById('sectionOne')
+let secTwo = document.getElementById('sectionTwo')
 
-let obj1 = {
-    title   : "Loki The God of Stories",
-    par     : "Loki was born on Jotunheim as the son of the Frost Giant King, Laufey. Small and weak for a Frost Giant, Loki was abandoned by his father in a temple, being left to die. In 965 A.D., not long after the war between the Giants and the Asgardians, Loki was found by King Odin. Adopting Loki and using sorcery to alter his appearance to make him appear to be an Asgardian, Odin raised Loki and his biological son, Thor, with his wife Frigga. As they grew up, Loki always felt that he was always living in Thor's shadow, envious to the fact that Thor was meant to be king instead of him.",
-    button  : "Kneel before your King",
-    img     : "images/loki2.png"
-}
+const dataOne = {
+    title: "Loki The God of Stories",
+    para: "Loki was born on Jotunheim as the son of the Frost Giant King, Laufey. Small and weak for a Frost Giant, Loki was abandoned by his father in a temple, being left to die. In 965 A.D., not long after the war between the Giants and the Asgardians, Loki was found by King Odin. Adopting Loki and using sorcery to alter his appearance to make him appear to be an Asgardian, Odin raised Loki and his biological son, Thor, with his wife Frigga. As they grew up, Loki always felt that he was always living in Thor's shadow, envious to the fact that Thor was meant to be king instead of him.",
+    button: "Kneel before your King",
+    image: "Loki_Profile.webp"
+};
 
-const { title, par, button, img } = obj1
+const dataTwo = {
+    title2: "Loki The God of Stories",
+    image1: "loki1.webp",
+    para1: "Loki was born on Jotunheim as the son of the Frost Giant King, Laufey. Small and weak for a Frost Giant, Loki was abandoned by his father in a temple, being left to die. In 965 A.D., not long after the war between the Giants and the Asgardians, Loki was found by King Odin. Adopting Loki and using sorcery to alter his appearance to make him appear to be an Asgardian, Odin raised Loki and his biological son, Thor, with his wife Frigga. As they grew up, Loki always felt that he was always living in Thor's shadow, envious to the fact that Thor was meant to be king instead of him.",
+    button1: "Kneel before your King",
+    image2: "loki7.jpg",
+    para2: "Loki was born on Jotunheim as the son of the Frost Giant King, Laufey. Small and weak for a Frost Giant, Loki was abandoned by his father in a temple, being left to die. In 965 A.D., not long after the war between the Giants and the Asgardians, Loki was found by King Odin. Adopting Loki and using sorcery to alter his appearance to make him appear to be an Asgardian, Odin raised Loki and his biological son, Thor, with his wife Frigga. As they grew up, Loki always felt that he was always living in Thor's shadow, envious to the fact that Thor was meant to be king instead of him.",
+    button2: "Kneel before your King",
+    image3: "loki8.webp",
+    para3: "Loki was born on Jotunheim as the son of the Frost Giant King, Laufey. Small and weak for a Frost Giant, Loki was abandoned by his father in a temple, being left to die. In 965 A.D., not long after the war between the Giants and the Asgardians, Loki was found by King Odin. Adopting Loki and using sorcery to alter his appearance to make him appear to be an Asgardian, Odin raised Loki and his biological son, Thor, with his wife Frigga. As they grew up, Loki always felt that he was always living in Thor's shadow, envious to the fact that Thor was meant to be king instead of him",
+    button3: "Kneel before your King",
+};
 
-let obj2 = {
-    image   : "images/loki3.avif",
-    desc    : "I, Loki, Prince of Asgard, Odinson, the rightful King of Jotunheim, God of Mischief, do hereby pledge to you, my undying fidelity.",
-    button1 : "Be enchanted",
-    title2  : "Project Complete"
-}
+const { title, para, button, image } = dataOne;
+const { title2, image1, image2, image3, para1, para2, para3, button1, button2, button3 } = dataTwo;
 
-const { image, desc, button1, title2 } = obj2
+const sectionOne = document.getElementById('sectionOne');
+const sectionTwo = document.getElementById('sectionTwo');
 
-section1.append(infofunc(title, par, button))
-section1.append(imgfun(img))
-section3.append(infofunc2(title2))
-section2.append(cardfunc(image, desc, button1))
-section2.append(cardfunc(image, desc, button1))
-section2.append(cardfunc(image, desc, button1))
-
+sectionOne.append(leftDiv(title, para, button));
+sectionOne.append(rightDiv(image));
+sectionTwo.append(sectwoDiv(title2, image1, image2, image3, para1, para2, para3, button1, button2, button3));

@@ -1,149 +1,281 @@
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-}
-body{
-    
-    background: linear-gradient(to top, rgba(65, 63, 1, 0.5)50%,rgba(65, 63, 1, 0.5)50%);;
-}
-
-.sec1con{
-    padding-top: 150px;
-    margin-bottom: 50px;
+    font-family: 'Loki Marvel', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Add Loki Marvel font with fallbacks */
     text-align: justify;
 }
-.secimg1{
-    width: fit-content;
+
+body {
+    background-color: #16151d;
 }
 
-div{
-    padding-left: 100px;
+.sectionOne {
+    color: rgb(232, 232, 232);
+    display: flex;
+    justify-content: center; /* Center align content horizontally */
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    font-weight: bold;
+    width: 70%;
 }
 
-img{
-    width: 500px;
-    margin-top: 75px;
-   
-    
+.imgc {
+    width: 400%;
+    height: 400%;
+    border-radius: 0px 50px 50px 50px;
+    margin-left: 6%;
+    margin-right: 5%;
+    border: 3px solid #222222;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #ECBA3D;
 }
 
-p, h1{
-    width: 400px;
+.title1 {
     margin-bottom: 20px;
-    text-align: justify;
-
-}
-.p, h1:hover {
-    transform: scale(1.1);
-    color: #FFD700;
+    font-size: 40px;
+    color: #99B927;
 }
 
-.section1{
+.para1 {
+    color: whitesmoke;
+}
+
+.sec1btn {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 35px;
+    background-color: #ECBA3D;
+    border: none;
+    color: #99B927;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+.leftClass {
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 10px;
+}
+
+.title2 {
+    color: #ECBA3D;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.img1 {
+    width: 130%;
+    height: 50vh; /* Adjust this value as needed for desired height */
+    border: 2px solid #99B927;
+    box-shadow: 0 0 10px #ECBA3D;
+
+}
+.img2 {
+    width: 130%;
+    height: 50vh; /* Adjust this value as needed for desired height */
+    border: 2px solid palevioletred;
+    box-shadow: 0 0 10px pink;
+}
+.img3 {
+    width: 130%;
+    height: 50vh; /* Adjust this value as needed for desired height */
+    border: 2px solid sandybrown;
+    box-shadow: 0 0 10px orange;
+}
+
+.container {
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 225px;
+    justify-content: space-between;
 }
 
-.section1 img:hover {
-    transform: scale(1.1);
+ul {
+    list-style: none;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: rgb(232, 232, 232);
 }
 
-.section2 {
+.column1,
+.column2,
+.column3{
+    flex: 1; /* Make all columns take up equal space */
     display: flex;
-    justify-content: space-around;
-    width: 1000px;
-    margin-left: 100px;
+    flex-direction: column;
+    align-items: center; /* Center align content vertically */
+    padding-right: 100px; /* Add padding to separate content from border */
+
 }
 
-.section2 img {
-    margin-top: 0;
-    width: 300px;
-    height: 300px;
-    margin-bottom: 0;
-    transition: transform 0.3s ease;
+.column1:last-child,
+.column2:last-child,
+.column3:last-child{
+    border-left: none; /* Remove border from last column */
 }
 
-.section2 img:hover {
+.sectionTwo {
+    margin-top: 150px;
+    margin-bottom: 200px;
+    border-top: 2px solid #fff; /* Add border to separate from Section One */
+    display: flex;
+    justify-content: center; /* Center align content horizontally */
+    align-items: center;
+    text-align: right;
+}
+
+/* Button Styles */
+.btn1,
+.btn2,
+.btn3{
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add transition for smooth transformations and background color changes */
+}
+
+/* Button 1 Styles */
+.btn1 {
+    background-color: #99B927;
+    border: none;
+    color: black;
+    margin-top: 15px; /* Adjust margin-top to create equal vertical spacing */
+    margin-bottom: 15px; /* Add margin-bottom for equal vertical spacing */
+}
+
+.btn1:hover {
+    background-color: #ECBA3D;
     transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-
-button{
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
-    background-color: rgb(7, 192, 17);
+/* Button 2 Styles */
+.btn2 {
+    background-color: #ECBA3D;
+    border: none;
     color: white;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
-    transition: box-shadow 0.5s;
+    margin-top: 15px; /* Adjust margin-top to create equal vertical spacing */
+    margin-bottom: 15px; /* Add margin-bottom for equal vertical spacing */
 }
 
-button:hover{
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+.btn2:hover {
+    background-color: mediumvioletred;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Button 3 Styles */
+.btn3 {
+    background-color: #99B927;
+    border: none;
+    color: black;
+    margin-top: 15px; /* Adjust margin-top to create equal vertical spacing */
+    margin-bottom: 15px; /* Add margin-bottom for equal vertical spacing */
+}
+
+.btn3:hover {
+    background-color: peru;
     transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+
+/* Adjust font size for the "View Character" sections of Tanjiro and Nezuko */
+.column1 .p2 {
+    font-size: 120%; /* Adjust font size for Tanjiro section */
+    color: #99B927; /* Adjust color for Tanjiro to fire red */
+    text-align: left;
+    padding-left: 20px;
+}
+.column2 .p2 {
+    font-size: 21.1px; /* Adjust font size for Nezuko section */
+    color: #FFC0CB; /* Add color like a pink cherry blossom for Nezuko */
+    text-align: left;
+    padding-left: 20px;
     
 }
 
-button:active{
-    transition: opacity 0.15s;
-    opacity: 0.8;
+.column3 .p2{
+    font-size: 22.1px;
+    color: #FFFF00; /* Add lightning color for Zenitsu */
+    text-align: left;
+    padding-left: 20px;
 }
 
-.hop{
-    width: 500px;
-    height: 500px;
-
+/* Animation for pop-up effect */
+.img1,
+.img2,
+.img3 {
+    transition: transform 0.3s ease;
+    transform: translate(-50% -50%);
 }
 
-.cardsec2{
-    background-color:#45884e;
-    margin-left: 66px;
-    margin-right: 20px;
-    padding-right: 300px;
-    padding-left: 0;
-    margin-bottom: 50px;
-    width: 200px;
-    border: 1px solid black;
-    border-radius: 10px;
-
-    padding-bottom: 20px;
-    box-shadow: 5px 10px 10px rgba(0,0,0,0.7);
-   
-}
-
-
-
-
-
-
-.hud{
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 280px;
-
-}
-
-.but{
-    margin-left: 100px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 100px;
-
-}
-
-.but:hover {
+/* Apply scale transformation on hover */
+.img1:hover,
+.img2:hover,
+.img3:hover {
     transform: scale(1.1);
 }
+/* Center images within columns */
+.img1,
+.img2,
+.img3 {
+    margin: auto; /* Center the images horizontally */
+    display: block; /* Ensure the images are displayed as block elements */
+}
+/* Animation for smooth appearing effect */
+@keyframes scrollingMotion {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
-.section3 h1{
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 270px;
+/* Apply animation to all sections */
+.sectionOne > *,
+.sectionTwo {
+    opacity: 0;
+    animation: scrollingMotion 0.5s ease-in-out forwards;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ECBA3D;
+    z-index: 1000;
+  }
+  
+  .title {
+    color: #4d5e0f;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  .navbar {
+    float: right;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
 }
