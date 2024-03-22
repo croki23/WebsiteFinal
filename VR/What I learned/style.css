@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&amp;family=Lato&amp;display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0; /* Increased padding */
+    background: linear-gradient(135deg, #181818, #232323, #181818); /* Loki-inspired gradient */
+    text-align: center; /* Centered text */
+}
+
+.about img {
+    width: 80%; /* Adjusted width */
+    max-width: 400px; /* Added max-width */
+    margin-bottom: 40px; /* Increased margin */
+    border-radius: 10px; /* Added border radius */
+    transition: transform 0.3s ease; /* Added transition */
+}
+
+.about img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.about .about-text {
+    width: 80%; /* Adjusted width */
+    max-width: 800px; /* Added max-width */
+    margin: 0 auto 60px; /* Centered horizontally and increased bottom margin */
+}
+
+.main {
+    width: 95%;
+    max-width: 1200px;
+    margin: 50px auto; /* Centered horizontally */
+}
+
+.about-text h1 {
+    color: #e5e5e5; /* Light gray text color */
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 20px; /* Increased margin */
+}
+
+.about-text h5 {
+    color: #e5e5e5; /* Light gray text color */
+    font-size: 22px; /* Adjusted font size */
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.about-text p {
+    color: #e5e5e5; /* Light gray text color */
+    font-size: 18px; /* Adjusted font size */
+    line-height: 1.6; /* Adjusted line height */
+    margin-bottom: 30px; /* Increased margin */
+}
+
+a {
+    background: #3d3d3d; /* Dark gray button background color */
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 5px;
+    transition: background 0.4s, border-color 0.4s, color 0.4s;
+}
+
+a:hover {
+    background: transparent;
+    border-color: #3d3d3d;
+    color: #3d3d3d;
+    cursor: pointer;
+}
